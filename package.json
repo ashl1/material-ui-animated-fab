@@ -1,6 +1,6 @@
 {
   "name": "material-ui-animated-fab",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Animation for FloatingActionButton for Material-UI",
   "main": "lib/index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   "peerDependencies": {
     "material-ui": ">= 0.18.0 < 1.0.0",
     "react": "^15.6.1",
+    "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-tap-event-plugin": "^2.0.1"
   },
