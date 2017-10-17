@@ -1,6 +1,6 @@
 {
   "name": "material-ui-animated-fab",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Animation for FloatingActionButton for Material-UI",
   "main": "lib/index.js",
   "scripts": {

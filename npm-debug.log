@@ -1,0 +1,150 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@4.0.5
+3 info using node@v7.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/alexey/Repos/material-ui-animated-fab',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/alexey/.npm/material-ui-animated-fab/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /home/alexey/.npm correctMkdir not in flight; initializing
+10 warn prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+11 warn prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+12 warn prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+13 info lifecycle material-ui-animated-fab@1.0.2~prepublish: material-ui-animated-fab@1.0.2
+14 verbose lifecycle material-ui-animated-fab@1.0.2~prepublish: unsafe-perm in lifecycle true
+15 verbose lifecycle material-ui-animated-fab@1.0.2~prepublish: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/alexey/Repos/material-ui-animated-fab/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+16 verbose lifecycle material-ui-animated-fab@1.0.2~prepublish: CWD: /home/alexey/Repos/material-ui-animated-fab
+17 silly lifecycle material-ui-animated-fab@1.0.2~prepublish: Args: [ '-c', 'babel src/ -d lib/ --ignore test.js' ]
+18 silly lifecycle material-ui-animated-fab@1.0.2~prepublish: Returned: code: 0  signal: null
+19 info lifecycle material-ui-animated-fab@1.0.2~prepare: material-ui-animated-fab@1.0.2
+20 silly lifecycle material-ui-animated-fab@1.0.2~prepare: no script for prepare, continuing
+21 verbose tar pack [ '/home/alexey/.npm/material-ui-animated-fab/1.0.2/package.tgz',
+21 verbose tar pack   '/home/alexey/Repos/material-ui-animated-fab' ]
+22 verbose tarball /home/alexey/.npm/material-ui-animated-fab/1.0.2/package.tgz
+23 verbose folder /home/alexey/Repos/material-ui-animated-fab
+24 verbose addLocalTarball adding from inside cache /home/alexey/.npm/material-ui-animated-fab/1.0.2/package.tgz
+25 verbose correctMkdir /home/alexey/.npm correctMkdir not in flight; initializing
+26 silly cache afterAdd material-ui-animated-fab@1.0.2
+27 verbose afterAdd /home/alexey/.npm/material-ui-animated-fab/1.0.2/package/package.json not in flight; writing
+28 verbose correctMkdir /home/alexey/.npm correctMkdir not in flight; initializing
+29 verbose afterAdd /home/alexey/.npm/material-ui-animated-fab/1.0.2/package/package.json written
+30 silly publish { name: 'material-ui-animated-fab',
+30 silly publish   version: '1.0.2',
+30 silly publish   description: 'Animation for FloatingActionButton for Material-UI',
+30 silly publish   main: 'lib/index.js',
+30 silly publish   scripts:
+30 silly publish    { build: 'babel src/ -d lib/ --ignore test.js',
+30 silly publish      prepublish: 'babel src/ -d lib/ --ignore test.js',
+30 silly publish      lint: 'standard',
+30 silly publish      test: 'jest' },
+30 silly publish   repository:
+30 silly publish    { type: 'git',
+30 silly publish      url: 'git+https://github.com/ashl1/material-ui-animated-fab.git' },
+30 silly publish   keywords:
+30 silly publish    [ 'react',
+30 silly publish      'material',
+30 silly publish      'material-ui',
+30 silly publish      'fab',
+30 silly publish      'floating action button' ],
+30 silly publish   author: { name: 'Alexey Shildyakov' },
+30 silly publish   license: 'MIT',
+30 silly publish   bugs: { url: 'https://github.com/ashl1/material-ui-animated-fab/issues' },
+30 silly publish   homepage: 'https://github.com/ashl1/material-ui-animated-fab#readme',
+30 silly publish   peerDependencies:
+30 silly publish    { 'material-ui': '>= 0.18.0 < 1.0.0',
+30 silly publish      react: '^15.6.1',
+30 silly publish      'react-addons-transition-group': '^15.6.0',
+30 silly publish      'react-dom': '^15.6.1',
+30 silly publish      'react-tap-event-plugin': '^2.0.1' },
+30 silly publish   dependencies: { 'prop-types': '^15.5.10' },
+30 silly publish   devDependencies:
+30 silly publish    { 'babel-cli': '^6.24.1',
+30 silly publish      'babel-core': '^6.25.0',
+30 silly publish      'babel-eslint': '^7.2.3',
+30 silly publish      'babel-plugin-transform-class-properties': '^6.24.1',
+30 silly publish      'babel-plugin-transform-object-assign': '^6.22.0',
+30 silly publish      'babel-preset-es2015': '^6.24.1',
+30 silly publish      'babel-preset-react': '^6.24.1',
+30 silly publish      'babel-preset-stage-3': '^6.24.1',
+30 silly publish      enzyme: '^2.9.1',
+30 silly publish      jest: '^20.0.4',
+30 silly publish      'material-ui': '>= 0.18.0 < 1.0.0',
+30 silly publish      react: '^15.6.1',
+30 silly publish      'react-dom': '^15.6.1',
+30 silly publish      standard: '^10.0.2' },
+30 silly publish   standard: { parser: 'babel-eslint' },
+30 silly publish   readme: '# material-ui-animated-fab\nAnimated FloatingActionButton for material-ui ^0.18.1\n\nThis package provide appearing and disappearing animation of Material-UI FloatingActionButton with onDidLeave() event.\n\n```\nimport ReactTransitionGroup from \'react-addons-transition-group\'\nimport AnimatedFAB from \'material-ui-animated-fab\'\nimport ContentAdd from \'material-ui/svg-icons/content/add\'\n\nlet fab = \'\'\nif (smth) {\n    fab = (\n        <AnimatedFAB\n            key={1}\n            style={style}\n            onClick={handleFabClicked}\n            onDidLeave={handleDidLeave}\n        >\n            <ContentAdd />\n        </AnimatedFAB>\n    )\n} else if (smth2) {\n    fab = (\n        <AnimatedFAB\n            key={2}\n            style={style2}\n            onClick={handleFabClicked}\n            onDidLeave={handleDidLeave}\n        >\n            <ContentAdd />\n        </AnimatedFAB>\n    )\n}\n\n<ReactTransitionGroup>\n    {fab}\n</ReactTransitionGroup>\n```\n\nMore extended versin of example located in **example.js** file in Github repo.\n\n# License\nMIT license\n\n© Alexey Shildyakov\n',
+30 silly publish   readmeFilename: 'README.md',
+30 silly publish   gitHead: '08df2709544e384f62afc6b63a8f1edc1ac138da',
+30 silly publish   _id: 'material-ui-animated-fab@1.0.2',
+30 silly publish   _shasum: '5a786c7a85b7bfea56ae560bd08da7fd3fb5f267',
+30 silly publish   _from: '.' }
+31 info lifecycle material-ui-animated-fab@1.0.2~prepublishOnly: material-ui-animated-fab@1.0.2
+32 silly lifecycle material-ui-animated-fab@1.0.2~prepublishOnly: no script for prepublishOnly, continuing
+33 verbose getPublishConfig undefined
+34 silly mapToRegistry name material-ui-animated-fab
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'material-ui-animated-fab',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   escapedName: 'material-ui-animated-fab',
+37 silly mapToRegistry   name: 'material-ui-animated-fab',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/material-ui-animated-fab
+39 verbose publish registryBase https://registry.npmjs.org/
+40 silly publish uploading /home/alexey/.npm/material-ui-animated-fab/1.0.2/package.tgz
+41 verbose request uri https://registry.npmjs.org/material-ui-animated-fab
+42 verbose request sending authorization for write operation
+43 info attempt registry request try #1 at 23:23:57
+44 verbose request using bearer token for auth
+45 verbose request id 0804b89972d75674
+46 http request PUT https://registry.npmjs.org/material-ui-animated-fab
+47 http 403 https://registry.npmjs.org/material-ui-animated-fab
+48 verbose headers { 'content-type': 'application/json',
+48 verbose headers   'cache-control': 'max-age=300',
+48 verbose headers   'content-length': '91',
+48 verbose headers   'accept-ranges': 'bytes',
+48 verbose headers   date: 'Tue, 17 Oct 2017 20:23:58 GMT',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'x-served-by': 'cache-bma7022-BMA',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1508271837.334897,VS0,VE1449',
+48 verbose headers   vary: 'Accept-Encoding, Accept' }
+49 verbose request invalidating /home/alexey/.npm/registry.npmjs.org/material-ui-animated-fab on PUT
+50 error publish Failed PUT 403
+51 verbose stack Error: You cannot publish over the previously published version 1.0.2. : material-ui-animated-fab
+51 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+51 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+51 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+51 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+51 verbose stack     at emitTwo (events.js:106:13)
+51 verbose stack     at Request.emit (events.js:192:7)
+51 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+51 verbose stack     at emitOne (events.js:96:13)
+51 verbose stack     at Request.emit (events.js:189:7)
+51 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+52 verbose statusCode 403
+53 verbose pkgid material-ui-animated-fab
+54 verbose cwd /home/alexey/Repos/material-ui-animated-fab
+55 error Linux 4.4.0-97-generic
+56 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "publish"
+57 error node v7.5.0
+58 error npm  v4.0.5
+59 error code E403
+60 error You cannot publish over the previously published version 1.0.2. : material-ui-animated-fab
+61 error If you need help, you may report this error at:
+61 error     <https://github.com/npm/npm/issues>
+62 verbose exit [ 1, true ]
